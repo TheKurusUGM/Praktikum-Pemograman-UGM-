@@ -1,29 +1,30 @@
+#include <iostream>
+using namespace std;
+
 int main() {
-    
-    double num1, num2, num3;
 
- 
-    std::cout << "Enter three numbers:\n";
-    std::cout << "First number: ";
-    std::cin >> num1;
-    std::cout << "Second number: ";
-    std::cin >> num2;
-    std::cout << "Third number: ";
-    std::cin >> num3;
+    int num1, num2, num3;
 
-    
-    double largest = num1;
+   
+    cout << "Input number 1: ";
+    cin >> num1;
+    cout << "Input number 2: ";
+    cin >> num2;
+    cout << "Input number 3: ";
+    cin >> num3;
 
+    int largest = num1; 
     if (num2 > largest) {
-        largest = num2; 
+        largest = num2;  
     }
 
     if (num3 > largest) {
-        largest = num3; 
+        largest = num3;  
     }
 
-   
-    std::cout << "The largest number is: " << largest << "\n";
+    
+    cout << "The largest number is: " << largest << endl;
 
     return 0;
 }
+
